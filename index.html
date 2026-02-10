@@ -621,12 +621,12 @@ _Home Delivery charges as applicable_
         // WhatsApp Number
         const whatsappNumber = '919923032665'; 
         
-        // Create WhatsApp URL
-        const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+        // Generate WhatsApp URL
+        const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
         
-        // Open WhatsApp in new tab
-        window.open(whatsappUrl, '_blank');
+        // Open WhatsApp
+        window.open(whatsappURL, '_blank');
     });
-</script>
+    </script>
 </body>
 </html>
