@@ -285,8 +285,8 @@
         }
 
         .floating-order {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+            background: linear-gradient(135deg, #ffa726 0%, #ffb74d 100%);
+            box-shadow: 0 4px 15px rgba(255, 167, 38, 0.4);
         }
 
         .floating-whatsapp:hover,
@@ -299,7 +299,7 @@
         }
 
         .floating-order:hover {
-            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+            box-shadow: 0 6px 20px rgba(255, 167, 38, 0.6);
         }
 
         .floating-whatsapp .icon-float,
@@ -524,11 +524,25 @@
                     <div class="form-group">
                         <div style="background: linear-gradient(135deg, #e8f5e9 0%, #fff3e0 100%); padding: 20px; border-radius: 8px; border-left: 4px solid #4caf50;">
                             <h3 style="color: #2e7d32; margin-bottom: 12px; font-size: 1.1em;">📦 How Our Delivery Works</h3>
+                            
+                            <!-- Booking Status Alert -->
+                            <div style="background: #fff3cd; border: 2px solid #ffc107; border-radius: 6px; padding: 15px; margin-bottom: 15px;">
+                                <p style="line-height: 1.8; color: #856404; font-weight: 600; margin-bottom: 8px;">
+                                    ⚠️ <strong>11th Feb 2025 lot FULLY BOOKED</strong>
+                                </p>
+                                <p style="line-height: 1.8; color: #856404; margin-bottom: 8px;">
+                                    📅 Next lot will be updated on group (mostly between 14th to 17th Feb)
+                                </p>
+                                <p style="line-height: 1.8; color: #856404;">
+                                    💬 Please join WhatsApp update group for more details 👇
+                                </p>
+                            </div>
+                            
                             <p style="line-height: 1.8; color: #333; margin-bottom: 10px;">
                                 🍇 Orders are pooled up to 50 boxes (100 kg) 📦 once or twice a week 🗓️.
                             </p>
                             <p style="line-height: 1.8; color: #333; margin-bottom: 10px;">
-                                🌱 After confirmation, fresh🍇are plucked ✂️ directly from Nashik farms 🚜.
+                                🌱 After confirmation, fresh grapes are plucked ✂️ directly from Nashik farms 🚜.
                             </p>
                             <p style="line-height: 1.8; color: #333;">
                                 📍 As per confirmed WhatsApp order Please Pickup at <strong>Laxmin Nagar, Chinchwad, Pune</strong> (Near Nisarg Misal) — with no extra charges. 
@@ -556,17 +570,17 @@
     <footer>
         <p>&copy; 2024 Aansh FreshFarm2Home | Premium Red Flame Seedless Grapes from Nashik</p>
         <p>Residue-Free | Export Quality | Farm Fresh</p>
-        <p style="margin-top: 10px;">📱 WhatsApp: +91-9923032665 | 📧 Email: <a href="mailto:aartikucheriya@zohomail.in">aartikucheriya@zohomail.in</a></p>
+        <p style="margin-top: 10px;">📱 WhatsApp: +91-9923032665 | 📧 Email: <a href="/cdn-cgi/l/email-protection#32535340465b5947515a57405b4b5372485d5a5d5f535b5e1c5b5c"><span class="__cf_email__" data-cfemail="67060615130e0c12040f02150e1e06271d080f080a060e0b490e09">[email&#160;protected]</span></a></p>
     </footer>
 
     <!-- Floating Action Buttons -->
     <div class="floating-buttons-container">
-        <!-- Order Button (Purple) -->
+        <!-- Order Button (Orange-Yellow) -->
         <a href="#orderForm" 
            class="floating-whatsapp floating-order" 
            aria-label="Place Your Order"
            onclick="document.getElementById('orderForm').scrollIntoView({behavior: 'smooth'}); return false;">
-            <span class="tooltip-text">Place your order 📦</span>
+            <span class="tooltip-text">Directly go to order form & fill details</span>
             <span class="icon-float">🛒</span>
         </a>
         
@@ -580,7 +594,8 @@
         </a>
     </div>
 
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+    <script>
     // Handle the Form Submission
     document.getElementById('orderForm').addEventListener('submit', function(e) {
         e.preventDefault();
@@ -595,7 +610,7 @@
         const totalAmount = boxes * 599;
 
         // Construct WhatsApp message
-        const message = `🍇 *New Order: Aansh FreshFarm2Home*
+        const message = `🍇 *Red-Grapes New Order: Aansh FreshFarm2Home*
 
 👤 *Customer:* ${name}
 📱 *Phone:* ${phone}
@@ -603,7 +618,9 @@
 💰 *Total Price:* ₹${totalAmount}/-
 🏠 *Address:* ${address}
 
-_Home Delivery charges as applicable`;
+_Home Delivery charges as applicable_
+
+📅 *Upcoming grapes lot may come 14th to 17th Feb. We will update exact details on community group.*`;
 
         // WhatsApp Number
         const whatsappNumber = '919923032665'; 
